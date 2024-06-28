@@ -8,12 +8,27 @@ import CreatePostComponent from './components/content-manager-component/CreatePo
 import ClientDetailsComponent from './components/client-management-component/ClientDetailsComponent'; 
 import UserManagementComponent from './components/user-management-component/UserManagementComponent'; 
 import ContactUsComponent from './components/contact-us-component/ContactUsComponent'; 
+import CollapsibleSection from './CollapsibleSection';
 
 
 const App = () => {
   return (
     <Router>
       <div>
+      <div className="App">
+      <header className="App-header">
+        <h1> Event Detail</h1>
+        <CollapsibleSection />
+      </header>
+    </div>
+
+    <div className="App">
+      <header className="App-header">
+        <h1> Create Post Form</h1>
+        <CollapsibleSection />
+      </header>
+    </div>
+
         <nav>
           <ul>
             <li>
